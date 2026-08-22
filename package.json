@@ -1,0 +1,11 @@
+{
+  "name": "sentry-github-relay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Opens a GitHub issue when Sentry opens a new one. No dependencies.",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}
