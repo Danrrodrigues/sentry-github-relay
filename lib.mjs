@@ -119,8 +119,13 @@ export function buildIssue(sentryIssue, orgSlug) {
   const rows = [
     ['Project', project],
     ['Level', sentryIssue.level || '—'],
+    ['Type', sentryIssue.metadata?.type || sentryIssue.type || '—'],
     ['Culprit', sentryIssue.culprit || '—'],
+    ['Platform', sentryIssue.platform || '—'],
     ['Short ID', sentryIssue.shortId || '—'],
+    ['Status', sentryIssue.status || '—'],
+    ['Events', sentryIssue.count ?? '—'],
+    ['Users affected', sentryIssue.userCount ?? '—'],
     ['First seen', sentryIssue.firstSeen || '—'],
   ]
 
